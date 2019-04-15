@@ -8,12 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		DEBB2A8922642E8000A9B692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2A8822642E8000A9B692 /* AppDelegate.swift */; };
-		DEBB2A8B22642E8000A9B692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2A8A22642E8000A9B692 /* ViewController.swift */; };
 		DEBB2A8E22642E8000A9B692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBB2A8C22642E8000A9B692 /* Main.storyboard */; };
 		DEBB2A9022642E8100A9B692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBB2A8F22642E8100A9B692 /* Assets.xcassets */; };
 		DEBB2A9322642E8100A9B692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBB2A9122642E8100A9B692 /* LaunchScreen.storyboard */; };
-		DEBB2A9E22642E8100A9B692 /* SalesTaxCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2A9D22642E8100A9B692 /* SalesTaxCalcTests.swift */; };
+		DEBB2A9E22642E8100A9B692 /* ItemListCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2A9D22642E8100A9B692 /* ItemListCoordinatorTests.swift */; };
 		DEBB2AA922642E8100A9B692 /* SalesTaxCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AA822642E8100A9B692 /* SalesTaxCalcUITests.swift */; };
+		DEBB2AB722642EB800A9B692 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AB622642EB800A9B692 /* AppCoordinator.swift */; };
+		DEBB2ABB2264306C00A9B692 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AB92264306C00A9B692 /* CalculatorViewController.swift */; };
+		DEBB2ABC2264306C00A9B692 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBB2ABA2264306C00A9B692 /* CalculatorViewController.xib */; };
+		DEBB2ABE2264325F00A9B692 /* CalculatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2ABD2264325F00A9B692 /* CalculatorCoordinator.swift */; };
+		DEBB2AC0226432C900A9B692 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2ABF226432C900A9B692 /* CalculatorViewModel.swift */; };
+		DEBB2AC422644CFE00A9B692 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AC222644CFE00A9B692 /* ItemListViewController.swift */; };
+		DEBB2AC522644CFE00A9B692 /* ItemListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBB2AC322644CFE00A9B692 /* ItemListViewController.xib */; };
+		DEBB2AC822644D5900A9B692 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AC622644D5900A9B692 /* ItemTableViewCell.swift */; };
+		DEBB2AC922644D5900A9B692 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBB2AC722644D5900A9B692 /* ItemTableViewCell.xib */; };
+		DEBB2ACC22644D7B00A9B692 /* TaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2ACA22644D7B00A9B692 /* TaxTableViewCell.swift */; };
+		DEBB2ACD22644D7B00A9B692 /* TaxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBB2ACB22644D7B00A9B692 /* TaxTableViewCell.xib */; };
+		DEBB2ACF22644DD600A9B692 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2ACE22644DD600A9B692 /* ItemListViewModel.swift */; };
+		DEBB2AD122644DF300A9B692 /* ItemListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AD022644DF300A9B692 /* ItemListCoordinator.swift */; };
+		DEBB2AD42264550900A9B692 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AD32264550900A9B692 /* Ticket.swift */; };
+		DEBB2AD6226474F400A9B692 /* ItemListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AD5226474F400A9B692 /* ItemListViewModelTests.swift */; };
+		DEBB2AD822647A6800A9B692 /* CalculatorViewCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AD722647A6800A9B692 /* CalculatorViewCoordinatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +51,32 @@
 /* Begin PBXFileReference section */
 		DEBB2A8522642E8000A9B692 /* SalesTaxCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesTaxCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBB2A8822642E8000A9B692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DEBB2A8A22642E8000A9B692 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEBB2A8D22642E8000A9B692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEBB2A8F22642E8100A9B692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBB2A9222642E8100A9B692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEBB2A9422642E8100A9B692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBB2A9922642E8100A9B692 /* SalesTaxCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesTaxCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEBB2A9D22642E8100A9B692 /* SalesTaxCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxCalcTests.swift; sourceTree = "<group>"; };
+		DEBB2A9D22642E8100A9B692 /* ItemListCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCoordinatorTests.swift; sourceTree = "<group>"; };
 		DEBB2A9F22642E8100A9B692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBB2AA422642E8100A9B692 /* SalesTaxCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesTaxCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBB2AA822642E8100A9B692 /* SalesTaxCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTaxCalcUITests.swift; sourceTree = "<group>"; };
 		DEBB2AAA22642E8100A9B692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBB2AB622642EB800A9B692 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DEBB2AB92264306C00A9B692 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		DEBB2ABA2264306C00A9B692 /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
+		DEBB2ABD2264325F00A9B692 /* CalculatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorCoordinator.swift; sourceTree = "<group>"; };
+		DEBB2ABF226432C900A9B692 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		DEBB2AC222644CFE00A9B692 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		DEBB2AC322644CFE00A9B692 /* ItemListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListViewController.xib; sourceTree = "<group>"; };
+		DEBB2AC622644D5900A9B692 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		DEBB2AC722644D5900A9B692 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		DEBB2ACA22644D7B00A9B692 /* TaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxTableViewCell.swift; sourceTree = "<group>"; };
+		DEBB2ACB22644D7B00A9B692 /* TaxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaxTableViewCell.xib; sourceTree = "<group>"; };
+		DEBB2ACE22644DD600A9B692 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
+		DEBB2AD022644DF300A9B692 /* ItemListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCoordinator.swift; sourceTree = "<group>"; };
+		DEBB2AD32264550900A9B692 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		DEBB2AD5226474F400A9B692 /* ItemListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewModelTests.swift; sourceTree = "<group>"; };
+		DEBB2AD722647A6800A9B692 /* CalculatorViewCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewCoordinatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				DEBB2A8822642E8000A9B692 /* AppDelegate.swift */,
-				DEBB2A8A22642E8000A9B692 /* ViewController.swift */,
+				DEBB2AB622642EB800A9B692 /* AppCoordinator.swift */,
+				DEBB2AD2226454D800A9B692 /* Models */,
+				DEBB2AC122644CD600A9B692 /* Item List View */,
+				DEBB2AB82264305400A9B692 /* Calculator View */,
 				DEBB2A8C22642E8000A9B692 /* Main.storyboard */,
 				DEBB2A8F22642E8100A9B692 /* Assets.xcassets */,
 				DEBB2A9122642E8100A9B692 /* LaunchScreen.storyboard */,
@@ -110,7 +143,9 @@
 		DEBB2A9C22642E8100A9B692 /* SalesTaxCalcTests */ = {
 			isa = PBXGroup;
 			children = (
-				DEBB2A9D22642E8100A9B692 /* SalesTaxCalcTests.swift */,
+				DEBB2A9D22642E8100A9B692 /* ItemListCoordinatorTests.swift */,
+				DEBB2AD722647A6800A9B692 /* CalculatorViewCoordinatorTests.swift */,
+				DEBB2AD5226474F400A9B692 /* ItemListViewModelTests.swift */,
 				DEBB2A9F22642E8100A9B692 /* Info.plist */,
 			);
 			path = SalesTaxCalcTests;
@@ -123,6 +158,40 @@
 				DEBB2AAA22642E8100A9B692 /* Info.plist */,
 			);
 			path = SalesTaxCalcUITests;
+			sourceTree = "<group>";
+		};
+		DEBB2AB82264305400A9B692 /* Calculator View */ = {
+			isa = PBXGroup;
+			children = (
+				DEBB2ABD2264325F00A9B692 /* CalculatorCoordinator.swift */,
+				DEBB2ABF226432C900A9B692 /* CalculatorViewModel.swift */,
+				DEBB2AB92264306C00A9B692 /* CalculatorViewController.swift */,
+				DEBB2ABA2264306C00A9B692 /* CalculatorViewController.xib */,
+			);
+			path = "Calculator View";
+			sourceTree = "<group>";
+		};
+		DEBB2AC122644CD600A9B692 /* Item List View */ = {
+			isa = PBXGroup;
+			children = (
+				DEBB2AD022644DF300A9B692 /* ItemListCoordinator.swift */,
+				DEBB2ACE22644DD600A9B692 /* ItemListViewModel.swift */,
+				DEBB2AC222644CFE00A9B692 /* ItemListViewController.swift */,
+				DEBB2AC322644CFE00A9B692 /* ItemListViewController.xib */,
+				DEBB2AC622644D5900A9B692 /* ItemTableViewCell.swift */,
+				DEBB2AC722644D5900A9B692 /* ItemTableViewCell.xib */,
+				DEBB2ACA22644D7B00A9B692 /* TaxTableViewCell.swift */,
+				DEBB2ACB22644D7B00A9B692 /* TaxTableViewCell.xib */,
+			);
+			path = "Item List View";
+			sourceTree = "<group>";
+		};
+		DEBB2AD2226454D800A9B692 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEBB2AD32264550900A9B692 /* Ticket.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +298,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBB2AC522644CFE00A9B692 /* ItemListViewController.xib in Resources */,
 				DEBB2A9322642E8100A9B692 /* LaunchScreen.storyboard in Resources */,
+				DEBB2ACD22644D7B00A9B692 /* TaxTableViewCell.xib in Resources */,
 				DEBB2A9022642E8100A9B692 /* Assets.xcassets in Resources */,
+				DEBB2ABC2264306C00A9B692 /* CalculatorViewController.xib in Resources */,
+				DEBB2AC922644D5900A9B692 /* ItemTableViewCell.xib in Resources */,
 				DEBB2A8E22642E8000A9B692 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +329,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEBB2A8B22642E8000A9B692 /* ViewController.swift in Sources */,
+				DEBB2AD42264550900A9B692 /* Ticket.swift in Sources */,
+				DEBB2ABE2264325F00A9B692 /* CalculatorCoordinator.swift in Sources */,
+				DEBB2AD122644DF300A9B692 /* ItemListCoordinator.swift in Sources */,
+				DEBB2ACC22644D7B00A9B692 /* TaxTableViewCell.swift in Sources */,
+				DEBB2AB722642EB800A9B692 /* AppCoordinator.swift in Sources */,
+				DEBB2ABB2264306C00A9B692 /* CalculatorViewController.swift in Sources */,
+				DEBB2ACF22644DD600A9B692 /* ItemListViewModel.swift in Sources */,
 				DEBB2A8922642E8000A9B692 /* AppDelegate.swift in Sources */,
+				DEBB2AC0226432C900A9B692 /* CalculatorViewModel.swift in Sources */,
+				DEBB2AC822644D5900A9B692 /* ItemTableViewCell.swift in Sources */,
+				DEBB2AC422644CFE00A9B692 /* ItemListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +347,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEBB2A9E22642E8100A9B692 /* SalesTaxCalcTests.swift in Sources */,
+				DEBB2A9E22642E8100A9B692 /* ItemListCoordinatorTests.swift in Sources */,
+				DEBB2AD6226474F400A9B692 /* ItemListViewModelTests.swift in Sources */,
+				DEBB2AD822647A6800A9B692 /* CalculatorViewCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
