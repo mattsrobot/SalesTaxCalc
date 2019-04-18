@@ -22,13 +22,15 @@
 		DEBB2AC522644CFE00A9B692 /* ItemListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBB2AC322644CFE00A9B692 /* ItemListViewController.xib */; };
 		DEBB2AC822644D5900A9B692 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AC622644D5900A9B692 /* ItemTableViewCell.swift */; };
 		DEBB2AC922644D5900A9B692 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBB2AC722644D5900A9B692 /* ItemTableViewCell.xib */; };
-		DEBB2ACC22644D7B00A9B692 /* TaxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2ACA22644D7B00A9B692 /* TaxTableViewCell.swift */; };
-		DEBB2ACD22644D7B00A9B692 /* TaxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBB2ACB22644D7B00A9B692 /* TaxTableViewCell.xib */; };
 		DEBB2ACF22644DD600A9B692 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2ACE22644DD600A9B692 /* ItemListViewModel.swift */; };
 		DEBB2AD122644DF300A9B692 /* ItemListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AD022644DF300A9B692 /* ItemListCoordinator.swift */; };
 		DEBB2AD42264550900A9B692 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AD32264550900A9B692 /* Ticket.swift */; };
 		DEBB2AD6226474F400A9B692 /* ItemListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AD5226474F400A9B692 /* ItemListViewModelTests.swift */; };
-		DEBB2AD822647A6800A9B692 /* CalculatorViewCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AD722647A6800A9B692 /* CalculatorViewCoordinatorTests.swift */; };
+		DEBB2AD822647A6800A9B692 /* CalculatorViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB2AD722647A6800A9B692 /* CalculatorViewControllerTests.swift */; };
+		DEEB800E2268AE8C0070684D /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB800D2268AE8C0070684D /* ItemListViewControllerTests.swift */; };
+		DEEB80102268B5AE0070684D /* ItemTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB800F2268B5AE0070684D /* ItemTableViewCellTests.swift */; };
+		DEEB80122268B6E30070684D /* CalculatorCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB80112268B6E30070684D /* CalculatorCoordinatorTests.swift */; };
+		DEEB80142268B76C0070684D /* CalculatorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB80132268B76C0070684D /* CalculatorViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,13 +72,15 @@
 		DEBB2AC322644CFE00A9B692 /* ItemListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListViewController.xib; sourceTree = "<group>"; };
 		DEBB2AC622644D5900A9B692 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		DEBB2AC722644D5900A9B692 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
-		DEBB2ACA22644D7B00A9B692 /* TaxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxTableViewCell.swift; sourceTree = "<group>"; };
-		DEBB2ACB22644D7B00A9B692 /* TaxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaxTableViewCell.xib; sourceTree = "<group>"; };
 		DEBB2ACE22644DD600A9B692 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
 		DEBB2AD022644DF300A9B692 /* ItemListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCoordinator.swift; sourceTree = "<group>"; };
 		DEBB2AD32264550900A9B692 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		DEBB2AD5226474F400A9B692 /* ItemListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewModelTests.swift; sourceTree = "<group>"; };
-		DEBB2AD722647A6800A9B692 /* CalculatorViewCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewCoordinatorTests.swift; sourceTree = "<group>"; };
+		DEBB2AD722647A6800A9B692 /* CalculatorViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewControllerTests.swift; sourceTree = "<group>"; };
+		DEEB800D2268AE8C0070684D /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
+		DEEB800F2268B5AE0070684D /* ItemTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCellTests.swift; sourceTree = "<group>"; };
+		DEEB80112268B6E30070684D /* CalculatorCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorCoordinatorTests.swift; sourceTree = "<group>"; };
+		DEEB80132268B76C0070684D /* CalculatorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +148,12 @@
 			isa = PBXGroup;
 			children = (
 				DEBB2A9D22642E8100A9B692 /* ItemListCoordinatorTests.swift */,
-				DEBB2AD722647A6800A9B692 /* CalculatorViewCoordinatorTests.swift */,
+				DEEB800D2268AE8C0070684D /* ItemListViewControllerTests.swift */,
 				DEBB2AD5226474F400A9B692 /* ItemListViewModelTests.swift */,
+				DEEB800F2268B5AE0070684D /* ItemTableViewCellTests.swift */,
+				DEEB80112268B6E30070684D /* CalculatorCoordinatorTests.swift */,
+				DEEB80132268B76C0070684D /* CalculatorViewModelTests.swift */,
+				DEBB2AD722647A6800A9B692 /* CalculatorViewControllerTests.swift */,
 				DEBB2A9F22642E8100A9B692 /* Info.plist */,
 			);
 			path = SalesTaxCalcTests;
@@ -180,8 +188,6 @@
 				DEBB2AC322644CFE00A9B692 /* ItemListViewController.xib */,
 				DEBB2AC622644D5900A9B692 /* ItemTableViewCell.swift */,
 				DEBB2AC722644D5900A9B692 /* ItemTableViewCell.xib */,
-				DEBB2ACA22644D7B00A9B692 /* TaxTableViewCell.swift */,
-				DEBB2ACB22644D7B00A9B692 /* TaxTableViewCell.xib */,
 			);
 			path = "Item List View";
 			sourceTree = "<group>";
@@ -300,7 +306,6 @@
 			files = (
 				DEBB2AC522644CFE00A9B692 /* ItemListViewController.xib in Resources */,
 				DEBB2A9322642E8100A9B692 /* LaunchScreen.storyboard in Resources */,
-				DEBB2ACD22644D7B00A9B692 /* TaxTableViewCell.xib in Resources */,
 				DEBB2A9022642E8100A9B692 /* Assets.xcassets in Resources */,
 				DEBB2ABC2264306C00A9B692 /* CalculatorViewController.xib in Resources */,
 				DEBB2AC922644D5900A9B692 /* ItemTableViewCell.xib in Resources */,
@@ -332,7 +337,6 @@
 				DEBB2AD42264550900A9B692 /* Ticket.swift in Sources */,
 				DEBB2ABE2264325F00A9B692 /* CalculatorCoordinator.swift in Sources */,
 				DEBB2AD122644DF300A9B692 /* ItemListCoordinator.swift in Sources */,
-				DEBB2ACC22644D7B00A9B692 /* TaxTableViewCell.swift in Sources */,
 				DEBB2AB722642EB800A9B692 /* AppCoordinator.swift in Sources */,
 				DEBB2ABB2264306C00A9B692 /* CalculatorViewController.swift in Sources */,
 				DEBB2ACF22644DD600A9B692 /* ItemListViewModel.swift in Sources */,
@@ -347,9 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEB80122268B6E30070684D /* CalculatorCoordinatorTests.swift in Sources */,
+				DEEB80102268B5AE0070684D /* ItemTableViewCellTests.swift in Sources */,
+				DEEB80142268B76C0070684D /* CalculatorViewModelTests.swift in Sources */,
 				DEBB2A9E22642E8100A9B692 /* ItemListCoordinatorTests.swift in Sources */,
 				DEBB2AD6226474F400A9B692 /* ItemListViewModelTests.swift in Sources */,
-				DEBB2AD822647A6800A9B692 /* CalculatorViewCoordinatorTests.swift in Sources */,
+				DEBB2AD822647A6800A9B692 /* CalculatorViewControllerTests.swift in Sources */,
+				DEEB800E2268AE8C0070684D /* ItemListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

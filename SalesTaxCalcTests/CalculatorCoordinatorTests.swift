@@ -1,8 +1,8 @@
 //
-//  CalculatorViewCoordinatorTests.swift
+//  CalculatorCoordinatorTests.swift
 //  SalesTaxCalcTests
 //
-//  Created by Matthew Wilkinson on 15/4/19.
+//  Created by Matthew Wilkinson on 18/4/19.
 //  Copyright © 2019 Some Robots. All rights reserved.
 //
 
@@ -18,8 +18,23 @@ class MockViewController : UIViewController {
     }
 }
 
-class CalculatorViewCoordinatorTests: XCTestCase {
+class CalculatorCoordinatorTests: XCTestCase {
 
+    func testShowingTheCalculator() {
+        // GIVEN a coordinator showing the Item List
+        let window = UIWindow(frame: .zero)
+        window.makeKeyAndVisible()
+        let coordinator = ItemListCoordinator(window: window)
+        coordinator.start()
+        XCTAssert(window.rootViewController is UINavigationController)
+        XCTAssert((window.rootViewController as! UINavigationController).viewControllers[0] is ItemListViewController)
+        // WHEN the user taps to add a new item
+        let vc = (window.rootViewController as! UINavigationController).viewControllers[0] as! ItemListViewController
+        vc.didRequestNewProduct()
+        // THEN the coordinator should present the calculator view
+        XCTAssert(coordinator.child is CalculatorCoordinator)
+    }
+    
     func testHidingTheCalculator() {
         // GIVEN a coordinator showing the Item List
         let vc = MockViewController()
@@ -31,7 +46,7 @@ class CalculatorViewCoordinatorTests: XCTestCase {
         coordinator.start()
         XCTAssert(vc.mockPresentVC is UINavigationController)
         XCTAssert((vc.mockPresentVC as! UINavigationController).viewControllers[0] is CalculatorViewController)
-
+        
         // WHEN the user taps cancel
         let calculatorVC = (vc.mockPresentVC as! UINavigationController).viewControllers[0] as! CalculatorViewController
         calculatorVC.didTapCancel()
@@ -66,5 +81,5 @@ class CalculatorViewCoordinatorTests: XCTestCase {
         XCTAssert(ticket?.quantity == 1)
         XCTAssert(ticket?.label == "Apple")
     }
-
+    
 }

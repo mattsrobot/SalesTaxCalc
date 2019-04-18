@@ -11,19 +11,16 @@ import XCTest
 
 class ItemListCoordinatorTests: XCTestCase {
 
-    func testShowingTheCalculator() {
+    func testShowingItemList() {
         // GIVEN a coordinator showing the Item List
         let window = UIWindow(frame: .zero)
         window.makeKeyAndVisible()
         let coordinator = ItemListCoordinator(window: window)
+        // WHEN the coordinator is started
         coordinator.start()
+        // THEN the window should display an item list
         XCTAssert(window.rootViewController is UINavigationController)
         XCTAssert((window.rootViewController as! UINavigationController).viewControllers[0] is ItemListViewController)
-        // WHEN the user taps to add a new item
-        let vc = (window.rootViewController as! UINavigationController).viewControllers[0] as! ItemListViewController
-        vc.didRequestNewProduct()
-        // THEN the coordinator should present the calculator view
-        XCTAssert(coordinator.child is CalculatorCoordinator)
     }
 
 }

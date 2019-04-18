@@ -12,15 +12,24 @@ struct ItemViewModel {
     let title: String
 }
 
+fileprivate struct Constants {
+    static let stateCodes = ["UT", "NV", "TX", "AL", "CA"]
+    static let map = ["UT" : ("Utah", 0.0685),
+                      "NV" : ("Nevada", 0.08),
+                      "TX" : ("Texas", 0.0625),
+                      "AL" : ("Alabama", 0.04),
+                      "CA" : ("California", 0.0825)]
+}
+
 class ItemListViewModel {
 
     var didRequestNewProduct: (() -> ())?
     var reloadBlock: (() -> ())?
 
-    private(set) var stateCodes = ["UT", "NV", "TX", "AL", "CA"]
-    private var map = ["UT" : ("Utah", 0.0685), "NV" : ("Nevada", 0.08), "TX" : ("Texas", 0.0625), "AL" : ("Alabama", 0.04), "CA" : ("California", 0.0825)]
+    private(set) var stateCodes: [String]
+    private var map: [String : (String, Double)]
     private(set) var list = [ItemViewModel]()
-    private var tickets = [Ticket]()
+    private var tickets: [Ticket]
     private(set) var totalBill = ""
     
     var selectedState: String {
@@ -29,8 +38,12 @@ class ItemListViewModel {
         }
     }
     
-    init(selectedState: String) {
+    init(selectedState: String, stateCodes: [String] = Constants.stateCodes, map: [String : (String, Double)] = Constants.map, tickets: [Ticket] = []) {
         self.selectedState = selectedState
+        self.stateCodes = stateCodes
+        self.map = map
+        self.tickets = tickets
+        updateList()
     }
     
     func stateNameFor(code: String) -> String? {

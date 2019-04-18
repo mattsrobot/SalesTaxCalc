@@ -59,7 +59,13 @@ extension ItemListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? viewModel.list.count: 1
+        if section == 0 {
+            return viewModel.list.count
+        }
+        if section == 1 {
+            return viewModel.totalBill.count > 0 ? 1 : 0
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

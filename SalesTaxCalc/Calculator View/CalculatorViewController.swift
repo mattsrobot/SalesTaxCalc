@@ -12,7 +12,6 @@ class CalculatorViewController: UIViewController {
     
     private(set) var viewModel: CalculatorViewModel
     
-    @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var productLabelTextField: UITextField!
     @IBOutlet weak var costTextField: UITextField! {
